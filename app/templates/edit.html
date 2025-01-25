@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Item</title>
+</head>
+<body>
+    <h1>Editar Item</h1>
+    <form action="/edit/{{ item.id }}" method="post">
+        <input type="text" name="name" value="{{ item.name }}" required>
+        <button type="submit">Salvar</button>
+    </form>
+    <a href="/">Voltar</a>
+</body>
+</html>
